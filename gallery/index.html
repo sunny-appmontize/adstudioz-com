@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ad Gallery | AdStudioz</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="description" content="Website description" />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      .video {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      .video-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        z-index: 1000;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .video-modal-content {
+        position: relative;
+        max-width: 90%;
+        width: 640px;
+        height: 360px;
+        background: transparent;
+      }
+
+      .video-modal-content iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      .close-modal {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1001;
+      }
+
+      @media (max-width: 768px) {
+        .video-modal-content {
+          width: 90%;
+          height: 200px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- start header -->
+    <header class="header">
+      <div class="header-inner" data-aos="fade-in" data-aos-duration="200">
+        <!-- start menu toggle -->
+        <a class="menu-toggle js-toggle-mobile" href="#"><span></span></a>
+        <!-- end menu toggle -->
+
+        <!-- start logo -->
+        <a class="header-logo" href="/">
+          <img src="logo.png" alt="AdStudioz" />
+        </a>
+        <!-- end logo -->
+
+        <!-- start main menu -->
+        <nav class="header-menu">
+          <ul>
+            <li class="is-active"><a href="ad-gallery.html">Ad Gallery</a></li>
+            <li><a href="our-work.html">Our Work</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+          </ul>
+        </nav>
+        <!-- end main menu -->
+
+        <a href="https://wa.me/9810929641" class="header-phone-btn">
+          <i class="icon-phone"></i>
+        </a>
+
+        <a
+          href="/cdn-cgi/l/email-protection#eb838e878784ab9d988e999dc5888486"
+          class="button button--black"
+        >
+          CONTACT
+        </a>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!--  start wrapper -->
+    <div class="wrapper">
+      <!-- start main -->
+      <main role="main" style="margin-top: 30px">
+        <!-- start heading section -->
+        <!-- <section class="heading container">
+          <div class="heading-inner" data-aos="fade-up">
+            <p>Check out some of our exciting projects.!</p>
+          </div>
+        </section> -->
+        <!-- end heading section -->
+
+        <!-- start gallery-tab section -->
+        <section class="gallery-tab hidden container">
+          <ul>
+            <li data-aos="fade-up" class="is-active js-all">
+              <a href="#all">All</a>
+            </li>
+          </ul>
+        </section>
+        <!-- end gallery-tab section -->
+
+        <!-- start gallery section -->
+        <section class="gallery container">
+          <div class="gallery-list">
+            
+              <div
+              class="gallery-item is-active"
+              data-cat="e-commerce touch-gestures category-awareness"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=_8D7nCSOZtE"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/KinderJoy.png" alt="" />
+              </a>
+            </div>
+            
+              <div
+              class="gallery-item is-active"
+              data-cat="e-commerce touch-gestures category-awareness"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=19Wwfo_lkI4"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/Galadari.png" alt="" />
+              </a>
+            </div>
+            
+                <div
+              class="gallery-item is-active"
+              data-cat="e-commerce touch-gestures category-awareness"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=XDTJDhSiFsg"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/Kusum.png" alt="" />
+              </a>
+            </div>
+            
+             <div
+              class="gallery-item is-active"
+              data-cat="e-commerce touch-gestures category-awareness"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=ie9mXn0hkjU"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/Starbucks.png" alt="" />
+              </a>
+            </div>
+            
+            <div
+              class="gallery-item is-active"
+              data-cat="e-commerce touch-gestures category-awareness"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=JIM1ZKIx1YI"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/Myra.png" alt="" />
+              </a>
+            </div>
+            
+            <div
+              class="gallery-item is-active"
+              data-cat="e-commerce touch-gestures category-awareness"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=ziFCSpO3PGw"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/Acko.png" alt="" />
+              </a>
+            </div>
+            
+            <div
+              class="gallery-item is-active"
+              data-cat="automobile touch-gestures product-launch"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=jNKyGBttOck"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/video1.png" alt="" />
+              </a>
+            </div>
+
+            <div
+              class="gallery-item is-active"
+              data-cat="e-commerce touch-gestures category-awareness"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=zSSZuCRSm2o"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/video2.png" alt="" />
+              </a>
+            </div>
+
+            <div
+              class="gallery-item is-active"
+              data-cat="consumer-durables touch-gestures brand-recall"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=vSZ2zDMnl7U"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/video3.png" alt="" />
+              </a>
+            </div>
+
+            <div
+              class="gallery-item is-active"
+              data-cat="entertainment touch-gestures trailer-launch"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=e4XeyWdRJQw"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/video4.png" alt="" />
+              </a>
+            </div>
+
+            <div
+              class="gallery-item is-active"
+              data-cat="entertainment touch-gestures trailer-launch"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=Wd0llkPgl58"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/video5.png" alt="" />
+              </a>
+            </div>
+
+            <div
+              class="gallery-item is-active"
+              data-cat="automobile touch-gestures product-launch"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=fX7BgsyBdQU"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/video6.png" alt="" />
+              </a>
+            </div>
+
+            <div
+              class="gallery-item is-active"
+              data-cat="e-commerce touch-gestures category-awareness"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=17IlqXjPWOs"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/video7.png" alt="" />
+              </a>
+            </div>
+
+            <div
+              class="gallery-item is-active"
+              data-cat="consumer-durables touch-gestures brand-recall"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=yj3JCJfwMYE"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/video8.png" alt="" />
+              </a>
+            </div>
+
+            <div
+              class="gallery-item is-active"
+              data-cat="entertainment touch-gestures trailer-launch"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=cGqMJm3ypeU"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/video9.png" alt="" />
+              </a>
+            </div>
+
+            <div
+              class="gallery-item is-active"
+              data-cat="entertainment touch-gestures trailer-launch"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=0PLRQtt4Qmc"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/video10.png" alt="" />
+              </a>
+            </div>
+
+            <div
+              class="gallery-item is-active"
+              data-cat="entertainment touch-gestures trailer-launch"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=AggXDOLzbCM"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/video11.png" alt="" />
+              </a>
+            </div>
+
+            <div
+              class="gallery-item is-active"
+              data-cat="entertainment touch-gestures trailer-launch"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=9A9XRjh3Qgk"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/poster17.png" alt="" />
+              </a>
+            </div>
+            <div
+              class="gallery-item is-active"
+              data-cat="entertainment touch-gestures trailer-launch"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=M1AIbNC4JGs"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/poster18.png" alt="" />
+              </a>
+            </div>
+            <div
+              class="gallery-item is-active"
+              data-cat="entertainment touch-gestures trailer-launch"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=2bgniRbqbYQ"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/poster19.png" alt="" />
+              </a>
+            </div>
+            <div
+              class="gallery-item is-active"
+              data-cat="entertainment touch-gestures trailer-launch"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=PjuabD5JICs"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/poster20.png" alt="" />
+              </a>
+            </div>
+            <div
+              class="gallery-item is-active"
+              data-cat="entertainment touch-gestures trailer-launch"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=1AgQ2hJzOVM"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/poster21.png" alt="" />
+              </a>
+            </div>
+            <div
+              class="gallery-item is-active"
+              data-cat="entertainment touch-gestures trailer-launch"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=heSbdQ2wXRE"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/poster22.png" alt="" />
+              </a>
+            </div>
+            <div
+              class="gallery-item is-active"
+              data-cat="entertainment touch-gestures trailer-launch"
+              data-tag="industry-driven ad-formats kpi-based"
+              style=""
+            >
+              <a
+                href="https://www.youtube.com/watch?v=xtiKLbOt0fk"
+                class="card-gallery js-popup-video"
+              >
+                <img src="posters/poster23.png" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <!-- <div class="gallery-loading">
+            <div class="lds-dual-ring"></div>
+          </div> -->
+        </section>
+      </main>
+      <!-- end main -->
+
+      <!--  start footer -->
+      <footer class="footer container" data-aos="fade-up">
+        <div class="footer-top">
+          <div class="footer-title">
+            Get <br />
+            in touch
+          </div>
+
+          <div class="footer-right">
+            <h2>Looking to win consumers? <br />AdStudioz is happy to help.</h2>
+
+            <a
+              href="/cdn-cgi/l/email-protection#6e0f0a071a170f2e0f1e1e0301001a07140b400d01400700"
+              class="button"
+            >
+              Contact us
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <!-- <a
+            href="https://adstudioz.com/"
+            class="footer-bottom-logo"
+            target="_blank"
+          >
+            a <img src="final/logo_final transparent.png" alt="" /> product
+          </a> -->
+
+          <p>
+            <!-- <a href="/privacy-policy.html" class="fa">Privacy Policy</a
+            ><span class="fspan">|</span
+            ><a href="/branding.html" class="fa">Branding Assets</a> -->
+            AdStudioz © All rights reserved
+          </p>
+        </div>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!--  end wrapper -->
+    <section id="get-cookie-section"></section>
+
+    <div id="video" class="video">
+        <div class="video-modal">
+            <span class="close-modal">×</span>
+            <div class="video-modal-content">
+                <iframe id="video-frame" src="" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        // Explicitly disable magnificPopup for js-popup-video links
+        if (typeof $.magnificPopup !== "undefined") {
+          $(".js-popup-video").magnificPopup({ disableOn: () => false });
+        }
+
+        // Ensure no existing event listeners interfere
+        $(".js-popup-video")
+          .off("click")
+          .on("click", function (e) {
+            e.preventDefault();
+            e.stopImmediatePropagation(); // Stop other handlers from interfering
+
+            // Extract video ID from URL
+            var videoUrl = $(this).attr("href");
+            var videoId = videoUrl.split("v=")[1];
+            var ampersandPosition = videoId.indexOf("&");
+            if (ampersandPosition !== -1) {
+              videoId = videoId.substring(0, ampersandPosition);
+            }
+            var embedUrl =
+              "https://www.youtube.com/embed/" + videoId + "?autoplay=1&rel=0";
+
+            // Reset and set iframe src
+            $("#video-frame").attr("src", "");
+            $("#video-frame").attr("src", embedUrl);
+
+            // Show modal with centering
+            $(".video-modal")
+              .css({
+                display: "flex",
+                "justify-content": "center",
+                "align-items": "center",
+              })
+              .hide()
+              .fadeIn();
+          });
+
+        // Close modal on clicking the close button
+        $(".close-modal")
+          .off("click")
+          .on("click", function (e) {
+            e.stopImmediatePropagation();
+            $(".video-modal").fadeOut();
+            $("#video-frame").attr("src", "");
+          });
+
+        // Close modal on clicking outside the video
+        $(".video-modal")
+          .off("click")
+          .on("click", function (e) {
+            if ($(e.target).is(".video-modal")) {
+              $(".video-modal").fadeOut();
+              $("#video-frame").attr("src", "");
+            }
+          });
+
+        // Ensure window click doesn't interfere with modal content
+        $(window)
+          .off("click")
+          .on("click", function (e) {
+            if ($(e.target).is(".video-modal")) {
+              $(".video-modal").fadeOut();
+              $("#video-frame").attr("src", "");
+            }
+          });
+      });
+    </script>
+  </body>
+</html>
